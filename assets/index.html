@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Star Wars Karakter Wiki</title>
+    <style>
+        body {
+            background-color: #111;
+            color: #eee;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        main {
+            width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid #555;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+        }
+        header h1 {
+            color: #ffe81f; /* Star Wars sarısı */
+            margin: 0;
+        }
+        aside {
+            background-color: #333;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-left: 5px solid #ffe81f;
+        }
+        article {
+            background-color: #222;
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #444;
+        }
+        article img {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 0 auto 15px auto;
+        }
+        footer {
+            text-align: center;
+            border-top: 1px solid #555;
+            padding-top: 10px;
+            margin-top: 20px;
+            color: #888;
+        }
+        /* İlerleme Çubukları */
+        .bar-arkasi {
+            background-color: #555;
+            height: 25px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .jedi-renk { background-color: lightgreen; height: 100%; }
+        .sith-renk { background-color: red; height: 100%; }
+    </style>
+</head>
+<body>
+<audio src="assets/audio/muzik.mp3" autoplay muted controls></audio>
+    <main>
+        <header>
+            <h1>Star Wars Wiki</h1>
+        </header>
+
+        <aside>
+            <strong>Kısa Bilgi:</strong> Güç (Force), tüm canlıları saran ve galaksiyi bir arada tutan mistik bir enerjidir.
+        </aside>
+
+        <article>
+            <h2>Luke Skywalker (Jedi)</h2>
+            <img src="assets/image/Luke_Skywalker_-_Welcome_Banner_(Cropped).jpg" alt="Luke Fotoğrafı" />
+            
+            <p>Luke, galaksiyi kurtaran çok güçlü bir Jedi şövalyesidir.</p>
+            
+            <strong>Güç (Force) - %90</strong>
+            <div class="bar-arkasi">
+                <div class="jedi-renk" style="width: 90%;"></div>
+            </div>
+
+            <strong>Işın Kılıcı - %85</strong>
+            <div class="bar-arkasi">
+                <div class="jedi-renk" style="width: 85%;"></div>
+            </div>
+        </article>
+
+        <article>
+            <h2>Darth Vader (Sith)</h2>
+            <img src="assets/image/Darth_Vader_-_2007_Disney_Weekends.jpg" alt="Vader Fotoğrafı" />
+            
+            <p>Eskiden Anakin adında bir Jedi iken karanlık tarafa geçmiş güçlü bir Sith'tir.</p>
+
+            <strong>Karanlık Güç - %95</strong>
+            <div class="bar-arkasi">
+                <div class="sith-renk" style="width: 95%;"></div>
+            </div>
+
+            <strong>Işın Kılıcı - %100</strong>
+            <div class="bar-arkasi">
+                <div class="sith-renk" style="width: 100%;"></div>
+            </div>
+        </article>
+        
+        <footer>
+            <p>Sadece HTML5 ve CSS3 Kullanılarak Yapılmıştır - 2026</p>
+        </footer>
+    </main>
+
+</body>
+</html>
