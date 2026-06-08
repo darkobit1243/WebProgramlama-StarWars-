@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Star Wars Karakter Wiki</title>
+        <style>
+            body {
+                background-color: #000000;
+                color: rgb(244, 244, 244);
+                font-family: 'font', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+                padding: 20px;
+            }
+            main {
+                  width: 800px;
+                  margin: 0 auto;
+            }
+            header
+            {
+                text-align: center;
+                border-bottom: 2px solid #000;
+                margin-bottom: 20px;
+                padding-bottom: 10px;
+            }
+             header h1 {
+            color: #ffe81f; /* Star Wars sarısı */
+            margin: 0;
+        }
+        aside {
+            background-color: #333;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-left: 5px solid #ffe81f;
+        }
+        article {
+          background-color: rgba(30, 30, 30, 0.75); /* Yarı şeffaf koyu arka plan */
+          backdrop-filter: blur(10px);               /* Arkadaki videoyu hafifçe bulanıklaştırır */
+          border: 1px solid rgba(255, 255, 255, 0.1); /* Çok hafif, şık bir çerçeve */
+          color: white;                              /* Yazıların net okunması için */
+          border-radius: 12px;                       /* Köşeleri yumuşatmak için */
+          padding: 20px;                             /* İçerik kenarlara yapışmasın diye */
+}
+        article img {
+            width: 100%;
+            max-width: 300px;
+            display: block;
+            margin: 0 auto 15px auto;
+        }
+        footer {
+            text-align: center;
+            border-top: 1px solid #555;
+            padding-top: 10px;
+            margin-top: 20px;
+            color: #888;
+        }
+        /* İlerleme Çubukları */
+        .bar-arkasi {
+            background-color: #555;
+            height: 25px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .ses-kutusu {
+    border-radius: 100px;       /* Tam yuvarlak şık köşeler */
+    padding: 8px 10px;         /* İç boşluk */
+    max-width: 500px;          /* Genişlik sınırı */
+    margin: 0 auto 10px auto;  /* Sayfada ortalama ve alt boşluk */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Derinlik hissi */
+}
+
+.ses-kutusu audio {
+    width: 100%;
+}
+
+#arka-plan-videosu {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100; /* Videoyu en arkaya katmana atmak için kod */
+    object-fit: cover; /* Videonun ekranı esnemeden tam kaplamasını sağlar */
+}
+
+
+
+        .jedi-renk { background-color: lightgreen; height: 100%; }
+        .sith-renk { background-color: red; height: 100%; }
+         </style>
+</head>
+<body>
+    <video autoplay muted loop id="arka-plan-videosu">
+    <source src="https://v1.pinimg.com/videos/mc/expMp4/48/6f/f7/486ff7b7545e8f3e1ab8266da5ee386e_t3.mp4" type="video/mp4">
+    Tarayıcınız video etiketini desteklemiyor.
+</video>
+    <main>
+        <header>
+       <h1>Star WARS Wiki</h1>    
+        </header>
+       <aside>
+        <div class="ses-kutusu">
+    <audio src="assets/audio/muzik.mp3" controls></audio>
+        </div>
+        <p></p>
+            <strong>Kısa Tanım:</strong> Güç (Force), tüm canlıları saran ve galaksiyi bir arada tutan mistik bir enerjidir. 
+       </aside>
+
+       <article>
+        <h2>Obi-Wan Kenobi</h2>
+        <img src="assets/image/obi-wan.jpg" alt="Obi-Wan Kenobi">
+        <p>Jedi düzeninin yıkılışına tanık olan, öğrencisi Anakin'in karanlık tarafa geçmesine rağmen inancını ve umudunu hiç kaybetmeyen, galaksinin en karanlık dönemlerinde hem Luke Skywalker'ın hem de tüm dengenin koruyucusu olmayı başaran efsanevi bir Jedi Ustasıdır.</p>
+        <strong> Güç (Force) - %80</strong>
+          <div class="bar-arkasi">
+               <div class="jedi-renk" style="width: 85%;"></div>
+          </div>
+        <strong>Işın Kılıcı - %80</strong>
+          <div class="bar-arkasi">
+               <div class="jedi-renk" style="width: 90%;"></div>
+          </div>
+    </article>
+
+    <article>
+        <h2>Luke Skywalker</h2>
+        <img src="assets/image/Luke_Skywalker_-_Welcome_Banner_(Cropped).jpg" alt="Luke Skywalker">
+        <p>Çiftlikte büyüyen sıradan bir çocukken babasının Darth Vader olduğunu öğrenen, galaksiyi İmparatorluk zulmünden kurtarırken kötülüğün içindeki iyiliğe inanarak babasını karanlık taraftan döndüren ve Jedi düzenini yeniden canlandıran efsanevi galaktik kahramandır. </p>
+        <strong> Güç (Force) - %80</strong>
+        <div class="bar-arkasi">
+            <div class="jedi-renk" style="width: 80%;"></div>
+        </div>
+        <strong> Işın Kılıcı - %80</strong>
+        <div class="bar-arkasi">
+            <div class="jedi-renk" style="width: 80%;"></div>
+        </div>
+
+    </article>
+
+     <article>
+        <h2> Leia Organa </h2>
+        <img src="assets/image/Princess_Leia's_characteristic_hairstyle.jpg" alt="">
+        <p>Padmé Amidala ve Anakin Skywalker'ın kızı olan Leia, doğumundan hemen sonra Bail Organa tarafından evlat edinilerek Alderaan prensesi olarak büyütülmüştür. Saray duvarlarının arkasına saklanmak yerine adaletsizliğe karşı savaşmayı seçen Leia, galaksinin gördüğü en güçlü siyasi ve askeri figürlerden biri haline gelmiştir.</p>
+        <strong> Güç (Force) - %70</strong>
+        <div class="bar-arkasi">
+            <div class="jedi-renk" style="width: 50;"></div>
+        </div>
+        <strong>Işın Kılıcı - %0</strong>
+        <div class="bar-arkasi">
+            <div class="jedi-renk" style="width: 0%;"></div>
+        </div>
+    </article>
+
+    <article>
+        <h2>Darth Vader</h2>
+        <img src="assets/image/Darth_Vader_-_2007_Disney_Weekends.jpg" alt="Darth Vader">
+        <p>Kehanetlerin işaret ettiği "Seçilmiş Kişi" Anakin Skywalker'ken sevdiği kadını ölümden kurtarma arzusu, korkuları ve öfkesi yüzünden Sith Lordu Darth Sidious tarafından manipüle edilerek karanlık tarafa geçen, uğradığı ağır fiziksel yıkım sonrası ikonik siyah zırhına hapsedilen, galakside terör estiren ama en sonunda oğlunun sevgisiyle içindeki iyiliği hatırlayıp kurtuluşa eren trajik bir imparatorluk celladıdır.</p>
+        <strong> Karanlık Güç - %95</strong>
+        <div class="bar-arkasi">
+            <div class="sith-renk" style="width: 100%;"></div>
+        </div>
+        <strong>Işın Kılıcı - %100</strong>
+        <div class="bar-arkasi">
+            <div class="sith-renk" style="width: 100%;"></div>
+        </div>
+    </article>
+
+     <article>
+        <h2> Kont Dooku </h2>
+        <img src="assets/image/Kont Dooku.png" alt="Kont Dooku">
+        <p>Kont Dooku (gizli adıyla Darth Tyranus); Büyük Usta Yoda'nın eski padawanı ve Qui-Gon Jinn'in ustası olan saygın bir Jedi'yken, Galaktik Cumhuriyet'teki yozlaşmaya ve Jedi Düzeni'nin dogmatik yapısına isyan ederek karanlık tarafa geçen, Darth Sidious'un ikinci çırağı olarak Klon Savaşları'nı başlatan asil, trajik ve karizmatik bir Sith Lordudur.</p>
+        <strong> Karanlık Güç - %90</strong>
+        <div class="bar-arkasi">
+            <div class="sith-renk" style="width: 90%;"></div>
+        </div>
+        <strong>Işın Kılıcı - %100</strong>
+        <div class="bar-arkasi">
+            <div class="sith-renk" style="width: 100%;"></div>
+        </div>
+
+    </article>
+
+    <article>
+        <h2> Darth Maul</h2>
+        <img src="assets/image/dartmaul.jpg" alt="Darth Maul">
+        <p>Vücudunu kaplayan kırmızı-siyah dövmeleri, başındaki boynuzları ve sinema tarihinde bir devrim yaratan çift taraflı ışın kılıcıyla tanınan, Darth Sidious'un acımasız ve ölümcül ilk Sith çırağıdır.</p>
+        <strong> Karanlık Güç - %90</strong>
+        <div class="bar-arkasi">
+            <div class="sith-renk" style="width: 90%;"></div>
+        </div>
+        <strong>Işın Kılıcı - %100</strong>
+        <div class="bar-arkasi">
+            <div class="sith-renk" style="width: 100%;"></div>
+        </div>
+    </article>
+
+    <article>   
+        <h2> General Grievous </h2>
+        <img src="assets/image/General-Grievous_c9df9cb5.png" alt="General Grievous">
+        <p>Güç yeteneklerine sahip olmadığı halde Sith Lordu Kont Dooku tarafından ışın kılıcı sanatında eğitilen, sibernetik geliştirmelerle vücudunu ölümcül bir silaha dönüştürerek Klon Savaşları'nda Droid Ordusu'nun Yüksek Komutanlığı'nı yapan ve katlettiği Jedi'ların ışın kılıçlarını ganimet olarak toplayan acımasız bir Jedi avcısıdır..</p>
+        <strong> Karanlık Güç - %85</strong>
+        <div class="bar-arkasi">
+            <div class="sith-renk" style="width: 85%;"></div>
+        </div>
+        <strong>Işın Kılıcı - %90</strong>
+        <div class="bar-arkasi">
+            <div class="sith-renk" style="width: 90%;"></div>
+        </div>
+    </article>
+
+   
+
+   
+
+
+
+
+
+
+
+
+    </main>
+</body>
+</html>
